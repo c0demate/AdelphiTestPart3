@@ -1,0 +1,230 @@
+/* The following declarations are global declarations */
+body {
+    margin: 0 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* The following declarations style the table on the Department List Page */
+.tableStyle { 
+    overflow-y: auto; 
+    height: 600px; 
+    border-top: 1px solid black;
+} 
+.tableStyle thead th { 
+    position: sticky; 
+    top: 0; 
+} 
+
+.tableStyle thead tr {
+    position: sticky; 
+    top: 0; 
+}
+
+table { 
+    border-collapse: collapse;         
+    width: 100%; 
+} 
+  
+th, td { 
+    padding: 8px 15px; 
+    border: 2px solid #000000; 
+} 
+th { 
+    background: #ffb500;; 
+} 
+
+/* The following declarations style the top nav-bar and the associated links */
+.header_ribbon {
+    display: flex;
+    height: 2.5em;
+    background: black;
+    padding: 0 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.topLeft a {
+    text-decoration: underline;
+    text-decoration-color: #ffb500;
+    text-decoration-thickness: .05em;
+    text-underline-offset: 0.2em;
+    font-weight: bold;
+    color: white;
+    font-family: Graphik, Ariel, sans-serif;
+    font-size: 1em;
+    padding: 0 .5em;
+}
+
+.topLeft a:hover {
+    color: #ffb500;
+    transition: 0.5s;
+}
+
+.topMiddle {
+    padding-top: .3em;
+}
+
+.topMiddle a {
+    text-decoration: none;
+    color: white;
+    font-family: Graphik, Ariel, sans-serif;
+    font-size: .95em;
+    padding: 0 .5em;
+}
+
+.topMiddle a:hover {
+    color: #ffb500;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+#strategicPlan a {
+    font-weight: 700;
+    color: #ffb500;
+}
+
+.topRightSearch {
+    padding-top: 0.3em;
+}
+
+.topRightSearch a {
+    font-weight: 700;
+    color: #ffb500;
+    font-family: Graphik, Ariel, sans-serif;
+    text-decoration: none;
+}
+
+.topRightSearch a:hover {
+    color: white;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+/* The following declarations style the Footer Section and associated links. */
+
+.adelphiFooter {
+    background: black;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    height: -webkit-fill-available;
+}
+
+.adelphiFooter a {
+    color: white;
+    padding: 1em 5em;
+    display: inline-block;
+    border: 2px solid #ffb500;
+    text-decoration: none;
+    font-family: Graphik, Ariel, sans-serif;
+    margin: 20px 20px;
+} 
+
+.adelphiFooter a:hover {
+    border: 4px solid #ffb500;
+    padding: .8em 4.8em;
+    transition: 0.5s;
+}
+
+
+/* The following declarations styles the google icons (ie bullet points) used in the nav menu */
+.material-symbols-outlined {
+    color: #636262;
+    font-size: .2em !important;
+}
+
+/* The following declarations are to construct a simple demo mobile menu */
+.icon {
+    display: none;
+}
+
+
+/* The following declarations are @media commands for promoting site useability and mobile friendliness */
+
+@media screen and (max-width: 930px) {
+    .icon {
+        display: block;
+    }
+    
+    .fa.fa-bars {
+        color: white;
+        font-size: 1.5em;
+        padding-top: 0.3em;
+    }
+
+    .fa.fa-times {
+        font-size: 1.5em;
+    }
+
+    .header_ribbon {
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+    .topLeft {
+        display: none;
+    }
+
+    .topLeft a {
+        display: flex;
+        background: #000000d4;
+        width: 200px;
+        padding: 20px;
+        padding-top: 1em;
+        border-top: 1px solid #ffb500;
+        z-index: 100;
+        position: sticky;
+    }
+
+    .topMiddle {
+        padding-top: 0;
+        display: none;
+    }
+
+    .topMiddle a {
+        display: flex;
+        background: #000000d4;
+        width: 200px;
+        padding: 20px;
+        padding-top: 1em;
+        border-top: 1px solid #ffb500;
+        z-index: 100;
+        position: sticky;
+    }
+
+    .topRightSearch {
+        padding-top: 0;
+        display: none;
+    }
+
+    .topRightSearch a{
+        display: flex;
+        background: #000000d4;
+        width: 200px;
+        padding: 20px;
+        padding-top: 1em;
+        border-top: 1px solid #ffb500;
+        z-index: 100;
+        position: sticky;
+    }
+
+    .tableStyle {
+        font-size: 12px;
+    }
+
+    .material-symbols-outlined {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .adelphiFooter {
+        position: inherit;
+    }
+}

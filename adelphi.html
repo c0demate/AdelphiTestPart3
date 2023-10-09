@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
+        <title>Adelphi University | Department List</title>
+        <meta name="description" content="Table displaying various department information at Adelphi University in Garden City, New York.">
+        <meta name="author" content="Matthew Kennedy">
+        <!---Below links to functions.js to retrieve database info -->
+        <script src="functions.js" type="text/javascript"></script>
+        <!---Below is a link to bullet points and a magnifying glass from Google Icons for styling purposes-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <!---Below is a link to a hamburger menu icon and 'Xs'for mobile nav menu styling-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--- Begin code for top Nav-Bar-->
+        <div class="header_ribbon">
+            <div class="topLeft" id="mobileGroup1"><!---Class for styling the top left Nav Menu-->
+                <a href="#">APPLY</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <a href="#">VISIT</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <a href="#">GIVE</a>
+            </div>
+            <div class="topMiddle"><!---Class for styling the top middle Nav Menu-->
+                <a href="#">News</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <a href="#">Events</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <a href="#">Athletics</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <a href="#">Alumni</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <a href="#">eCampus</a>
+                <span class="material-symbols-outlined"><!---This imports a google logo (bulletpoint)-->
+                    radio_button_checked
+                </span>
+                <span id="strategicPlan"><a href="#">Strategic Plan</a></span><!---span for styling the 'strategic plan' button in the Nav Menu-->
+            </div>
+            <div class="topRightSearch"><!---Class for styling the top right Nav Menu-->
+                <a href="#">Search</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><!---Creates a mobile nav 'hamburger' menu in mobile view: width less than 930pxs-->
+                <i class="fa fa-bars" id="barsCustom"></i>
+              </a>
+        </div>
+    
+        <!--- End Code for top Nav-Bar-->
+
+        <div class="tableTopStyle">
+            <h1>Department List</h1>
+        </div>
+        <!-- table for showing data from functions.js -->
+        <div class="tableStyle"> 
+            <table id="departmentList"></table>
+        </div>
+        <!--- Creates a footer at the bottom of the page with additional links-->
+        <footer class = "adelphiFooter">
+            <a href="#">Apply Now</a>
+            <a href="#">Plan a Visit</a>
+            <a href="#">Give Now</a>   
+        </footer>
+    </body>
+</html>
+
